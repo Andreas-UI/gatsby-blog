@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+{% comment %} import Bio from "../components/bio" {% endcomment %}
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -30,9 +30,9 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <footer>
+        {% comment %} <footer>
           <Bio />
-        </footer>
+        </footer> {% endcomment %}
       </article>
       <nav className="blog-post-nav">
         <ul
